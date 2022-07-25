@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi CV</title>
+    <!--
+        https://github.com/necolas/normalize.css/
+    -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/mystyle.css" as="style">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400:700&display=swap" rel="sylesheet">
+</head>
+
+<body>
+    <header>
+        <!--<span>: contenedor en linea, sirve para aplicar estlos al texto o agrupar elementos-->
+        <h1 class="titulo">Richard Ortiz <span>CV</span></h1>
+    </header>
+    <!--<div>: para crear secciones o agrupar contenidos-->
+    <!--INICIA MENU DE NAVEGACION-->
+    <div class="nav-bg">
+        <!--<nav>: Etiqueta de navegacion o para crear menus de navegacion-->
+        <nav class="navegacion-principal contenedor">
+            <!--<a>: etique para crear hiperenlaces a otros recursos o paginas-->
+            <a href="#">Inicio</a>
+            <a href="#">Sobre Mi</a>
+            <a href="#">Mi Experiencia</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <!--FIN MENU DE NAVEGACION-->
+    </div>
+    <!--Contener elementos por tematica o seccion-->
+    <section class="hero">
+        <div class="contenido-hero">
+            <h2>Diseño y Desarrollo web <span>Richard Ortiz</span></h2>
+            <div class="ubicacion">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88"
+                    height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC107" fill="none"
+                    stroke-linecap="round" storke-linejoin="round">
+                </svg>
+                <p>Guastatoya, El Progreso.</p>
+            </div>
+            <!--para los botones una etique anchor = <a> -->
+            <a href="#" class="boton">Contactar</a>
+        </div>
+    </section>
+    <!--Contenedor principal de la pagina web-->
+    <main class="contenedor sombra">
+        <h2>Mi Experiencia</h2>
+
+        <div class="servicios"><!--Inicio de la experiencia del usuario-->
+            <section class="servicios">
+                <h3>Diseño Web</h3>
+                <div class="iconos">
+                   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-palette" width="40"
+                       height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                       stroke-linecap="round" stroke-linejoin="round">
+                </div>
+                <p>Desarrollo en Hhtml vanilla, Framework, Etc.</p>
+            </section>
+
+            <section class="servicios">
+            <h3>Aplicaciones Web</h3>
+            <div class="iconos">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-android" width="40"
+                    height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+            </div>
+            <p>Desarrollo en PHP vanilla, Framework, Etc.</p>
+            </section>
+
+            <section class="servicios">
+                <h3>Aplicaciones Moviles</h3>
+                <div class="iconos">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-android"
+                        width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                </div>
+                <p>Desarrollo de aplicaciones MOviles en Android, Framework, Etc.</p>
+            </section>
+        </div>
+        <!--Fin de la experiencia del usuario-->
+        <section>
+            <!--Etiqueta FORM para crear formularios-->
+            <form class="formulario"><!--Inicio de mi formulario-->
+                <fieldset>
+                    <legend>Contactános llenando el siguiente formulario</legend>
+
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input type="text" class="input-text" placeholder="Tu Nombre">
+                        </div>
+
+                        <div class="campo">
+                            <label>Telléfono</label>
+                            <input type="text" class="input-text" placeholder="Tu Teléfono">
+                        </div>
+
+                        <div class="campo">
+                            <label>Correo</label>
+                            <input type="email" class="input-text" placeholder="Tu Email">
+                        </div>
+
+                        <div class="campo">
+                            <label>Mensaje</label>
+                            <textarea class="input-text"></textarea>
+                        </div>
+
+                    </div>
+                    <!--Fin de mi formulario-->
+                    <div class="alinear-derecha flex">
+                        <input type="submit" class="boton w-sm-100" value="Enviar">
+                    </div>
+                </fieldset>
+
+            </form>
+
+        </section>
+
+
+    </main>
+
+    <footer class="footer"><p>Todos los derechos reservados. Richard Ortiz Mi UMG Sanarate plan Domingo.</p></footer>
+</body>
+
+</html>
